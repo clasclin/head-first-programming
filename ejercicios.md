@@ -28,3 +28,21 @@ Si no
         El número es bajo
 Muestra que jugaste demasiado
 ```
+
+Los usuarios se siguen quejando, dicen que un intento no es suficiente, hay que permitirles seguir intentando hasta que adivinen. Para eso hace falta un bucle.
+
+```
+Mensaje de bienvenida
+Variable en cero para iniciar el bucle
+Mientras la variable sea distinta de cinco
+    Pide datos de entrada y lo guarda en una variable
+    Convierte la entrada en un número
+    Si el número es igual a cinco
+        Entonces muestras que ganaste
+    Si no
+        Si el número es mayor que cinco
+            Da una pista, es muy alto
+        Si no
+            El número es bajo
+    Muestra que jugaste demasiado
+```
