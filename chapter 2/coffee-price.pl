@@ -5,6 +5,10 @@ use LWP::Simple;
 
 my $page = get("http://beans.itcarlow.ie/prices.html");
 die "Couldn't get it!" unless defined $page;
-my $price = substr($page, 234, 4);
+
+my $index = index($page, '>$') + 2;
+my $last = 4;
+
+my $price = substr($page, $index, $last);
 
 print $price;

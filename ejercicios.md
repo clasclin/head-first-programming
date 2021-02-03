@@ -86,3 +86,13 @@ Decodifica el texto
 Extrae el precio en una variable
 Muestra el precio
 ```
+
+La url ha cambiado, de hecho hay precios diferenciados para grandes clientes. Resulta conveniente extraer el precio sin necesidad de saber exactamente donde encontrarlo.
+
+```
+Importar las librerías necesarias
+Hacer una petitción a una página web
+Decodifica el texto
+Extrae el precio de manera inteligente
+Muestra el precio
+```
