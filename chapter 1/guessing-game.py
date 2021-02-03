@@ -4,5 +4,8 @@ guess = int(g)                  # Convert the input to a number
 if guess == 5:                  # Is the input 5?
     print("You win!")           # It is, shows that you win
 else:                           # The input is not 5
-    print("You lose!")          # It says you lose
+    if guess > 5:
+        print("Too high")
+    else:
+        print("Too low")
 print("Game Over!")             # End game

@@ -8,7 +8,11 @@ chomp(my $guess = <STDIN>);
 if ($guess == 5) {
     print "You win!\n";
 } else {
-    print "You lose!\n";
+    if ($guess > 5) {
+        print "Too high\n";
+    } else {
+        print "Too low\n";
+    }
 }
 
 print "Game Over!\n";
