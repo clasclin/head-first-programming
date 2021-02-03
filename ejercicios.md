@@ -46,3 +46,22 @@ Mientras la variable sea distinta de cinco
             El número es bajo
     Muestra que jugaste demasiado
 ```
+
+Lo suyo sería que el número a adivinar no sea siempre el mismo, para ello modificar el programa para sea aleatorio entre 1 y 10
+
+```
+Mensaje de bienvenida
+Guardo en una variable el número secreto
+Variable en cero para iniciar el bucle
+Mientras la variable sea distinta de nro secreto
+    Pide datos de entrada y lo guarda en una variable
+    Convierte la entrada en un número
+    Si el número es igual a nro secreto
+        Entonces muestras que ganaste
+    Si no
+        Si el número es mayor que nro secreto
+            Da una pista, es muy alto
+        Si no
+            El número es bajo
+    Muestra que jugaste demasiado
+```
