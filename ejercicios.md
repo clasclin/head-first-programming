@@ -76,3 +76,13 @@ Hacer una petitción a una página web
 Decodifica el texto
 Muestra el código de la página
 ```
+
+El código anterior muestra toda la página y solo se necesita el precio del café. Hace falta una pequeña modificación.
+
+```
+Importar las librerías necesarias
+Hacer una petitción a una página web
+Decodifica el texto
+Extrae el precio en una variable
+Muestra el precio
+```
