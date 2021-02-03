@@ -1,4 +1,4 @@
-## Capítulo 1
+## Capítulo 1 - starting to code
 
 Lo primero que aparece es el clásico juego de adivinanzas y hay que escribir comentarios sobre que se supone que hace el código mostrado.
 
@@ -64,4 +64,15 @@ Mientras la variable sea distinta de nro secreto
         Si no
             El número es bajo
     Muestra que jugaste demasiado
+```
+
+## Capítulo 2 - textual data
+
+Hay que ayudar al ceo de una cafetería, tuvo la idea de consultar el precio del café online y en base a eso tomar decisiones.
+
+```
+Importar las librerías necesarias
+Hacer una petitción a una página web
+Decodifica el texto
+Muestra el código de la página
 ```
