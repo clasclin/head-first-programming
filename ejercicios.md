@@ -111,3 +111,15 @@ Mientras el precio no sea bajo
 ```
 
 El segundo capítulo refuerza la toma de decisiones, los bucles, e incluye funciones para el procesamiento de texto y el acceso a la web.
+
+## Capítulo 3 - functions
+
+A veces el precio no baja lo suficiente y eso genera problemas de stock, es necesario poder comprar incluso con un precio algo elevado. Una función que consiga el precio va a ser útil ya que va a evitar duplicar código.
+
+```
+Defino función conseguir precio
+    Hacer una petitción a una página web
+    Decodifica el texto
+    Extrae el precio de manera inteligente
+    Lo muestra por pantalla
+```
