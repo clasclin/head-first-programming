@@ -65,6 +65,7 @@ Mientras la variable sea distinta de nro secreto
             El número es bajo
     Muestra que jugaste demasiado
 ```
+El primer capítulo introduce la toma de decisiones y los bucles.
 
 ## Capítulo 2 - textual data
 
@@ -96,3 +97,17 @@ Decodifica el texto
 Extrae el precio de manera inteligente
 Muestra el precio
 ```
+
+No es necesario avisar de la compra todo el tiempo, solo cuando el precio sea conveniente.
+
+```
+Importar las librerías necesarias
+Precio alto
+Mientras el precio no sea bajo
+    Hacer una petitción a una página web
+    Decodifica el texto
+    Extrae el precio de manera inteligente
+¡Ahora es momento de comprar!
+```
+
+El segundo capítulo refuerza la toma de decisiones, los bucles, e incluye funciones para el procesamiento de texto y el acceso a la web.
