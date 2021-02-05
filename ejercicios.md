@@ -123,3 +123,16 @@ Defino función conseguir precio
     Extrae el precio de manera inteligente
     Lo muestra por pantalla
 ```
+
+Reescribo el código para hacer uso de la función anterior
+
+```
+Pregunto al usuario si quiere un reporte de mergency
+Si lo quiere
+    Muestro el precio por pantalla
+Si no
+    Bucle donde
+        Consulto el precio cada quince minutos hasta que baje
+        Muestro el precio por pantalla
+    ¡Ahora es momento de comprar!
+```

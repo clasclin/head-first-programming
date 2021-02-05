@@ -10,15 +10,20 @@ sub get_price {
     my $index = index($page, '>$') + 2;
     my $last = 4;
     
-    print substr($page, $index, $last);
+    return substr($page, $index, $last);
 }
 
-get_price();
+print "Emergency order [Y/N]? ";
+chomp(my $emergency_order = <STDIN>);
 
-# my $price = 99.9;
-# while ($price > 4.74) {
-    # sleep(900);
-# 
-# }
-# 
-# print "Buy!\n";
+if ($emergency_order eq "Y") {
+    print get_price();
+} else {
+    my $price = 99.9;
+    while ($price > 4.74) {
+        sleep(900);
+        $price = get_price();
+        print $price;
+    }
+    print "Buy!\n";
+}

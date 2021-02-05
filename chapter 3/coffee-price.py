@@ -8,12 +8,16 @@ def get_price():
     index = text.find(">$") + 2
     last = index + 4
     
-    print(text[index:last])
+    return float(text[index:last])
 
-get_price()
+emergency_order = input("Emergency order [Y/N]? ")
 
-# price = 99.9
-# while price > 4.74:
-    # time.sleep(900)
-
-# print("Buy!")
+if emergency_order == "Y":
+    print(get_price())
+else:
+    price = 99.9
+    while price > 4.74:
+        time.sleep(900)
+        price = get_price()
+        print(price)
+    print("Buy!")
