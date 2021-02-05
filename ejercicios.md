@@ -136,3 +136,22 @@ Si no
         Muestro el precio por pantalla
     ¡Ahora es momento de comprar!
 ```
+
+Cambié la parte en la que se pide enviar datos a twitter porque sería demasiado complicado para lo que se quiere hacer,
+como el contenido es relevante en cuanto a funciones, como pasar argumentos, y el alcance de las variables lo modifiqué
+para que en lugar de enviar datos a twitter simplemente los guarde en un archivo 'twitter.txt'
+
+La lógica del ejercicio es más o menos así.
+
+```
+Defino una función que guarda la fecha y hora en un archivo
+
+Defino una función que consigue el precio del café
+
+Pregunto al usuario si quiere un reporte de emergencia
+Si
+    Consulto el precio y lo guardo en archivo
+Si no
+    Consulto el precio cada cierto tiempo hasta que baje
+    Guardo en archivo cuando es momento de comprar
+```
