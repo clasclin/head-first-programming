@@ -169,3 +169,16 @@ Para cada linea
 Cierro el archivo
 Muestro cual fue el mayor puntaje
 ```
+
+Si bien la idea era buena no contabas con los nombres de los surfistas y eso rompió el programa
+
+```
+Variable con el maximo puntaje, por ahora cero
+Abro el archivo 'results.txt'
+Para cada linea
+    Separo cada línea en surfista y puntaje
+    Si el valor es mayor que el registrado
+        Pasa a ser el mayor valor
+Cierro el archivo
+Muestro cual fue el mayor puntaje
+```

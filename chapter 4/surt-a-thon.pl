@@ -6,8 +6,9 @@ open my $result_f, '<', 'results.txt' or die "Coudn't open file, $!";
 
 while ( my $line = <$result_f> ) {
     chomp $line;
-    if ($line > $highest_score) {
-        $highest_score = $line;
+    my ($name, $score) = split /\s+/, $line, 2;
+    if ($score > $highest_score) {
+        $highest_score = $score;
     }
 }
 
