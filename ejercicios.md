@@ -194,3 +194,5 @@ Para cada linea del archivo
 Cierro el archivo
 Muestro los puntajes
 ```
+
+Es una mejora pero todavía falta asociar los nombres con los puntajes, para eso se emplea un hash o diccionario según el lenguaje

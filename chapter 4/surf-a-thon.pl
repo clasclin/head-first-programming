@@ -12,6 +12,8 @@ while ( my $line = <$result_f> ) {
 
 close $result_f;
 
+@scores = reverse sort @scores;
+
 print "Highest score was:\n";
 print "$scores[0]\n";
 print "$scores[1]\n";

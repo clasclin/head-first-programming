@@ -7,6 +7,8 @@ for line in result_f:
 
 result_f.close()
 
+scores.sort(reverse=True)
+
 print("The highest score was:")
 print(scores[0])
 print(scores[1])
