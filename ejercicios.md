@@ -182,3 +182,15 @@ Para cada linea
 Cierro el archivo
 Muestro cual fue el mayor puntaje
 ```
+
+Tal vez sea mejor idea guardar los puntajes en un arreglo
+
+```
+Declaro un arreglo
+Abro el archivo
+Para cada linea del archivo
+    Separo el nombre y el puntaje
+    Guardo el puntaje en el arreglo
+Cierro el archivo
+Muestro los puntajes
+```
