@@ -196,3 +196,17 @@ Muestro los puntajes
 ```
 
 Es una mejora pero todavía falta asociar los nombres con los puntajes, para eso se emplea un hash o diccionario según el lenguaje
+
+## Capítulo 5 - hashes and databases
+
+Reescribir el programa para que utilice un diccionario
+
+```
+Creo un diccionario vacio
+Abro el archivo
+Para cada linea del archivo
+    Separo el nombre y el puntaje
+    Guardo el nombre y el puntaje en el diccionario
+Cierro el archivo
+Muestro los puntajes y nombres ordenados
+```
