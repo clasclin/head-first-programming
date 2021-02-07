@@ -210,3 +210,22 @@ Para cada linea del archivo
 Cierro el archivo
 Muestro los puntajes y nombres ordenados
 ```
+
+Implementar una función que acepte un id y devuelva la información si está disponible sino ignorar
+
+```
+Definir función que acepte un parametro
+    Abro el archivo
+    Para cada linea del archivo
+        Creo un hash con datos
+        Si el dato que busco coincide con el id
+            Cierro el archivo
+            Retorno el hash
+    Cierro el archivo
+    Retorno un hash vacio
+
+Pido el id a buscar
+Llamo a la funcion
+Si encontro algo
+    Mostrar los datos prolijamente
+```

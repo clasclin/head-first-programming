@@ -1,10 +1,30 @@
 use strict;
 use warnings;
 
-my $line = "101;Johnny 'wave-boy' Jones;USA;8.32;Fish;21";
-my %s;
+sub find_details {
+    my $id = shift;
+    open my $fh, '<', 'surfing_data.csv' 
+        or die "Coudn't open file!: $!";
+    while (<$fh>) {
+        my %s;
+        ($s{'id'}, $s{'name'}, $s{'country'}, $s{'average'}, $s{'board'}, $s{'age'}) = split /;/;
+        if ($id == $s{'id'}) {
+            close $fh;
+            return \%s;
+        }
+    }
+    close $fh;
+    return {};
+}
 
-($s{'id'}, $s{'name'}, $s{'country'}, $s{'average'}, $s{'board'}, $s{'age'}) = split /;/, $line;
-
-printf "ID:%12s\nName:%30s\nCountry:%7s\nAverage:%8s\nBoard type:%5s\nAge:%10s", 
-    $s{'id'}, $s{'name'}, $s{'country'}, $s{'average'}, $s{'board'}, $s{'age'};
+print "Enter the id of the surfer: ";
+my $lookup_id = <STDIN>;
+my $surfer = find_details($lookup_id);
+if (%{ $surfer }) {
+    print "ID:         $surfer->{'id'}\n";
+    print "Name:       $surfer->{'name'}\n";
+    print "Country:    $surfer->{'country'}\n";
+    print "Average:    $surfer->{'average'}\n";
+    print "Board type: $surfer->{'board'}\n";
+    print "Age:        $surfer->{'age'}\n";
+}
