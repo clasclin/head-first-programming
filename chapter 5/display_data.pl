@@ -1,19 +1,38 @@
 use strict;
 use warnings;
 
+use DBI;
+
+sub db_handle {
+    my $db_file = shift
+        or die "db_handle() requieres a database name";
+    no warnings 'once';
+    return DBI->connect(
+        "dbi:SQLite:dbname=$db_file",
+        "", # no username required
+        "", # no password required
+        { RaiseError => 1, PrintError => 0, AutoCommit => 1 },
+    ) || die $DBH::errstr;
+}
+
 sub find_details {
     my $id = shift;
-    open my $fh, '<', 'surfing_data.csv' 
-        or die "Coudn't open file!: $!";
-    while (<$fh>) {
-        my %s;
-        ($s{'id'}, $s{'name'}, $s{'country'}, $s{'average'}, $s{'board'}, $s{'age'}) = split /;/;
-        if ($id == $s{'id'}) {
-            close $fh;
-            return \%s;
+    my $dbh = db_handle('surfersDB.sdb');
+    my $sth = $dbh->prepare("SELECT * FROM SURFERS");
+
+    $sth->execute;
+    while ( my $row = $sth->fetchrow_hashref ) {
+        if ($row->{'id'} == $id) {
+            return {
+                id => $row->{'id'},
+                name => $row->{'name'},
+                country => $row->{'country'},
+                average => $row->{'average'},
+                board => $row->{'board'},
+                age => $row->{'age'},
+            };
         }
     }
-    close $fh;
     return {};
 }
 

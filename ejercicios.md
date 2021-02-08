@@ -229,3 +229,20 @@ Llamo a la funcion
 Si encontro algo
     Mostrar los datos prolijamente
 ```
+
+Te fue tan bien que los de la tele te pidieron que implementes lo mismo, solo que ellos tienen sus datos en una base de datos. Toca modificar la función que se ocupa de entrar los detalles
+
+```
+Definir función que acepte un parametro
+    Me conecto a la base de datos
+    Para cada fila de la base
+        Si el dato que busco coincide con el id
+            Creo un hash con datos
+            Retorno el hash
+    Retorno un hash vacio
+
+Pido el id a buscar
+Llamo a la funcion
+Si encontro algo
+    Mostrar los datos prolijamente
+```
