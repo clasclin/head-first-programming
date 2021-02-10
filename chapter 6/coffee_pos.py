@@ -1,4 +1,5 @@
 from transactions import *
+from promotion import *
 
 items = ["DONUT", "LATTE", "FILTER", "MUFFIN"]
 prices = [1.50, 2.0, 1.80, 1.20]
@@ -15,4 +16,5 @@ while running:
         running = False
     else:
         credit_card = int(input("Credit card number: "))
-        save_transactions(prices[choice - 1], credit_card, items[choice -1])
+        new_price = discount(prices[choice - 1])
+        save_transactions(new_price, credit_card, items[choice -1])
