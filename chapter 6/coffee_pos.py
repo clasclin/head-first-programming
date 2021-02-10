@@ -1,5 +1,7 @@
+import promotion
+import starbuzz
+
 from transactions import *
-from promotion import *
 
 items = ["DONUT", "LATTE", "FILTER", "MUFFIN"]
 prices = [1.50, 2.0, 1.80, 1.20]
@@ -16,5 +18,7 @@ while running:
         running = False
     else:
         credit_card = int(input("Credit card number: "))
-        new_price = discount(prices[choice - 1])
-        save_transactions(new_price, credit_card, items[choice -1])
+        price = promotion.discount(prices[choice - 1])
+        if input("Starbuzz card? ") == "Y":
+            price = starbuzz.discount(price)
+        save_transactions(price, credit_card, items[choice -1])
