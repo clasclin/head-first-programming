@@ -266,3 +266,5 @@ Un bucle que sirva de menú
         Pido el nro de tarjeta de credito
         Guardo la transacción
 ```
+
+Cambio el formato del archivo de transacciones que se envia al banco, y no solo eso, ahora hay un gimnasio usando el programa. Lo mejor sería separar la función que se ocupa del registro en su propio módulo y así actualizar tan solo un archivo, evitando duplicar código.

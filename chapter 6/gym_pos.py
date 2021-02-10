@@ -1,7 +1,7 @@
 from transactions import *
 
-items = ["DONUT", "LATTE", "FILTER", "MUFFIN"]
-prices = [1.50, 2.0, 1.80, 1.20]
+items = ["WORKOUT", "WEIGHTS", "BIKES"]
+prices = [35.0, 10.0, 8.0]
 running = True
 
 while running:
