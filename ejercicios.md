@@ -246,3 +246,23 @@ Llamo a la funcion
 Si encontro algo
     Mostrar los datos prolijamente
 ```
+
+## Capítulo 6 - modular programming
+
+Escribir un programa que se encargue de registrar las ventas del día en un archivo 'transactions.txt' para luego poder enviarselo al banco, se registra el nro de tarjeta, el precio y el item
+
+```
+Definir una función que se ocupe del registro
+
+Un arreglo que contenga los items
+Un arreglo que contenga los precios
+
+Un bucle que sirva de menú
+    Muestro cada opción
+    Pido datos de entrada
+    Si la opción es salir
+        Salgo
+    Si no
+        Pido el nro de tarjeta de credito
+        Guardo la transacción
+```
